@@ -1,0 +1,12 @@
+# Local theme preview HTML
+simsefin-new-theme.html
+
+# Local image assets
+Images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.avif
+*.svg
