@@ -447,6 +447,26 @@ a:focus-visible {
     color: var(--soft-white);
 }
 
+.permalink-back-link {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 22px;
+    color: var(--pink);
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.is-permalink-page .permalink-back-link {
+    display: inline-flex;
+}
+
+.permalink-back-link:hover,
+.permalink-back-link:focus-visible {
+    color: var(--ink-text);
+}
+
 .mods-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -642,6 +662,10 @@ a:focus-visible {
     min-height: 0 !important;
     aspect-ratio: 16 / 9 !important;
     overflow: hidden;
+}
+
+.is-permalink-page .tumblr-mod-card>.mod-card-link>.tumblr-mod-card-media {
+    display: none !important;
 }
 
 .tumblr-mod-card>.mod-card-link>.mod-card-content {
