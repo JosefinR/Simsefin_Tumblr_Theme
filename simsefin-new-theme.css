@@ -451,6 +451,12 @@ a:focus-visible {
     display: none;
 }
 
+body:not(.is-permalink-page) .mods-filters,
+body:not(.is-permalink-page) .mods-grid {
+    max-width: 1160px;
+    margin-inline: auto;
+}
+
 .permalink-back-link {
     display: none;
     align-items: center;
@@ -483,11 +489,6 @@ a:focus-visible {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 26px;
-}
-
-body:not(.is-permalink-page) .mods-grid {
-    max-width: 1160px;
-    margin-inline: auto;
 }
 
 .is-permalink-page .mods-grid {
@@ -798,7 +799,7 @@ body:not(.is-permalink-page) .mods-grid {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 48px;
+    margin-top: 64px;
     padding: 15px 24px;
     border: 1px solid var(--black-button);
     border-radius: 999px;
