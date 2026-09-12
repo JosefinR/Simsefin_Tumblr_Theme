@@ -25,13 +25,13 @@
  */
 
 :root {
-    --page-background: #222222;
-    --header-background: #222222;
+    --page-background: #1a1a1a;
+    --header-background: #1a1a1a;
     --header-text: #ffffff;
     --soft-white: #fffdf9;
     --pink: #fa8eaa;
-    --black-button: #171717;
-    --ink-text: #342820;
+    --black-button: #1a1a1a;
+    --ink-text: #1a1a1a;
     --eyebrow-text: #fffdf9;
     --eyebrow-background: #171717;
     --hero-title: #fffdf9;
