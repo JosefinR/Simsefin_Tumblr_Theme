@@ -711,6 +711,27 @@ a:focus-visible {
     margin: 0;
 }
 
+.is-permalink-page .tumblr-mod-card .mod-card-description img {
+    width: min(1000px, calc(100vw - (var(--content-gutter) * 2)));
+    max-width: none;
+    margin: 12px 0 12px 50%;
+    transform: translateX(-50%);
+}
+
+.is-permalink-page .tumblr-mod-card .mod-card-description figure {
+    width: min(1000px, calc(100vw - (var(--content-gutter) * 2)));
+    max-width: none;
+    margin: 12px 0 12px 50%;
+    transform: translateX(-50%);
+}
+
+.is-permalink-page .tumblr-mod-card .mod-card-description figure img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    transform: none;
+}
+
 .mod-card-content {
     display: flex;
     flex: 1;
