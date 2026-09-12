@@ -711,27 +711,6 @@ a:focus-visible {
     margin: 0;
 }
 
-.is-permalink-page .tumblr-mod-card .mod-card-description img {
-    width: min(1000px, calc(100vw - (var(--content-gutter) * 2)));
-    max-width: none;
-    margin: 12px 0 12px 50%;
-    transform: translateX(-50%);
-}
-
-.is-permalink-page .tumblr-mod-card .mod-card-description figure {
-    width: min(1000px, calc(100vw - (var(--content-gutter) * 2)));
-    max-width: none;
-    margin: 12px 0 12px 50%;
-    transform: translateX(-50%);
-}
-
-.is-permalink-page .tumblr-mod-card .mod-card-description figure img {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    transform: none;
-}
-
 .mod-card-content {
     display: flex;
     flex: 1;
@@ -753,6 +732,12 @@ a:focus-visible {
     font-weight: 750;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.is-permalink-page .tumblr-mod-card .mod-card-meta {
+    width: min(1000px, calc(100vw - (var(--content-gutter) * 2)));
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .mod-card-status {
@@ -783,6 +768,31 @@ a:focus-visible {
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 750;
+}
+
+.is-permalink-page .tumblr-mod-card .mod-card-cta {
+    display: flex;
+    width: 100%;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 15px 24px;
+    border: 1px solid var(--black-button);
+    border-radius: 999px;
+    background: var(--black-button);
+    color: var(--soft-white);
+    font-size: 15px;
+    line-height: 1.2;
+    transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.is-permalink-page .tumblr-mod-card .mod-card-cta:hover,
+.is-permalink-page .tumblr-mod-card .mod-card-cta:focus-visible {
+    border-color: var(--pink);
+    background: var(--pink);
+    color: var(--ink-text);
 }
 
 .mods-empty-state {
