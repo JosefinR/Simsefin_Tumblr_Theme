@@ -31,13 +31,14 @@
     --soft-white: #fffdf9;
     --pink: #fa8eaa;
     --black-button: #171717;
+    --ink-text: #342820;
     --eyebrow-text: #fffdf9;
     --eyebrow-background: #171717;
     --hero-title: #fffdf9;
     --primary-button-background: #fffdf9;
-    --primary-button-text: #171717;
+    --primary-button-text: var(--ink-text);
     --secondary-button-background: #fa8eaa;
-    --secondary-button-text: #171717;
+    --secondary-button-text: var(--ink-text);
     --content-width: 1280px;
     --content-gutter: 80px;
     --corner-radius: 30px;
@@ -266,7 +267,26 @@ a:focus-visible {
 
 .site-content {
     background: var(--soft-white);
-    color: var(--black-button);
+    color: var(--ink-text);
+}
+
+.site-footer {
+    padding: 32px 20px 40px;
+    border-top: 1px solid rgba(52, 40, 32, 0.12);
+    background: var(--soft-white);
+    color: rgba(52, 40, 32, 0.68);
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.site-footer p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.site-footer p+p {
+    margin-top: 8px;
 }
 
 .content-nav {
@@ -289,7 +309,7 @@ a:focus-visible {
     border: 0;
     border-bottom: 3px solid transparent;
     background: transparent;
-    color: rgba(23, 23, 23, 0.58);
+    color: rgba(52, 40, 32, 0.58);
     cursor: pointer;
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -302,7 +322,7 @@ a:focus-visible {
 .content-nav-link:focus-visible,
 .content-nav-link.is-active {
     border-bottom-color: var(--pink);
-    color: var(--black-button);
+    color: var(--ink-text);
 }
 
 .content-view[hidden] {
@@ -340,13 +360,13 @@ a:focus-visible {
 .content-view-placeholder-text {
     max-width: 560px;
     margin: 0;
-    color: rgba(23, 23, 23, 0.68);
+    color: rgba(52, 40, 32, 0.68);
     font-size: 17px;
 }
 
 .mods-overview {
     background: var(--soft-white);
-    color: var(--black-button);
+    color: var(--ink-text);
     padding: 52px 0 60px;
 }
 
@@ -382,7 +402,7 @@ a:focus-visible {
 
 .mods-overview-description {
     margin: 0;
-    color: rgba(23, 23, 23, 0.68);
+    color: rgba(52, 40, 32, 0.68);
     font-size: 16px;
 }
 
@@ -398,7 +418,7 @@ a:focus-visible {
     border: 1px solid rgba(23, 23, 23, 0.18);
     border-radius: 999px;
     background: transparent;
-    color: var(--black-button);
+    color: var(--ink-text);
     cursor: pointer;
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -440,7 +460,7 @@ a:focus-visible {
     height: 100%;
     min-height: 100%;
     flex-direction: column;
-    color: var(--black-button);
+    color: var(--ink-text);
 }
 
 .mod-card-link:hover,
@@ -471,7 +491,7 @@ a:focus-visible {
     justify-content: space-between;
     gap: 8px;
     margin-bottom: 16px;
-    color: rgba(23, 23, 23, 0.58);
+    color: rgba(52, 40, 32, 0.58);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 11px;
     font-weight: 750;
@@ -493,7 +513,7 @@ a:focus-visible {
 
 .mod-card-description {
     margin: 0;
-    color: rgba(23, 23, 23, 0.68);
+    color: rgba(52, 40, 32, 0.68);
     font-size: 14px;
     line-height: 1.5;
 }
@@ -512,7 +532,7 @@ a:focus-visible {
 .mods-empty-state {
     grid-column: 1 / -1;
     margin: 20px 0 0;
-    color: rgba(23, 23, 23, 0.62);
+    color: rgba(52, 40, 32, 0.62);
 }
 
 [hidden] {
