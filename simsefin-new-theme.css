@@ -760,14 +760,30 @@ a:focus-visible {
 }
 
 .mod-card-cta {
-    display: inline-flex;
+    display: flex;
+    width: 100%;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-top: auto;
-    padding-top: 22px;
-    color: var(--pink);
+    padding: 12px 18px;
+    border: 1px solid var(--pink);
+    border-radius: 14px;
+    background: var(--pink);
+    color: var(--ink-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 750;
+    line-height: 1.2;
+    transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.mod-card-cta:hover,
+.mod-card-cta:focus-visible {
+    border-color: var(--black-button);
+    background: var(--black-button);
+    color: var(--soft-white);
 }
 
 .is-permalink-page .tumblr-mod-card .mod-card-cta {
