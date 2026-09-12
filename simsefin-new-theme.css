@@ -457,6 +457,10 @@ a:focus-visible {
     grid-template-columns: minmax(0, 1fr);
 }
 
+.is-permalink-page .hero {
+    display: none;
+}
+
 .is-permalink-page .tumblr-mod-card {
     grid-column: 1 / -1;
 }
