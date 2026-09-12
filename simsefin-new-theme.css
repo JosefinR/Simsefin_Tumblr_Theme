@@ -451,10 +451,10 @@ a:focus-visible {
     display: none;
 }
 
-body:not(.is-permalink-page) .mods-filters,
 body:not(.is-permalink-page) .mods-grid {
     max-width: 1160px;
-    margin-inline: auto;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .permalink-back-link {
