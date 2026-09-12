@@ -600,6 +600,31 @@ a:focus-visible {
     margin: 0;
 }
 
+.tumblr-mod-card,
+.tumblr-mod-card>.mod-card-link {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.tumblr-mod-card>.mod-card-link>.tumblr-mod-card-media {
+    display: block !important;
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 9 !important;
+    overflow: hidden;
+}
+
+.tumblr-mod-card>.mod-card-link>.mod-card-content {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0;
+}
+
 .tumblr-mod-card .mod-card-description img {
     display: block;
     max-width: 100%;
