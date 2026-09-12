@@ -1,6 +1,8 @@
 /*
  * Simsefin Tumblr Theme CSS
  * Copyright (c) 2026 Simsefin
+.mods-pagination a {
+    color: var(--pink);
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -605,6 +607,15 @@ a:focus-visible {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
+}
+
+.tumblr-mod-card {
+    cursor: pointer;
+}
+
+.tumblr-mod-card:focus-visible {
+    outline: 2px solid var(--pink);
+    outline-offset: 4px;
 }
 
 .tumblr-mod-card>.mod-card-link>.tumblr-mod-card-media {
