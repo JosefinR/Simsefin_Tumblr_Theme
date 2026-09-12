@@ -592,6 +592,28 @@ a:focus-visible {
     object-fit: cover;
 }
 
+.tumblr-mod-card-media figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.tumblr-mod-card .mod-card-description img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 0;
+}
+
+.tumblr-mod-card .mod-card-description figure {
+    max-width: 100%;
+    margin: 12px 0;
+}
+
+.tumblr-mod-card .mod-card-description figure img {
+    margin: 0;
+}
+
 .mod-card-content {
     display: flex;
     flex: 1;
