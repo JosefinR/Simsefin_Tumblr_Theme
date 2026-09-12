@@ -73,7 +73,7 @@ a:focus-visible {
 }
 
 .site-header {
-    min-height: 100vh;
+    min-height: auto;
     overflow: hidden;
     background: var(--header-background);
 }
@@ -173,7 +173,7 @@ a:focus-visible {
 .hero {
     display: grid;
     width: min(calc(100% - (var(--content-gutter) * 2)), var(--content-width));
-    min-height: calc(100vh - 116px);
+    min-height: clamp(460px, calc(100vh - 340px), 620px);
     margin: 0 auto;
     padding: 28px 0 56px;
     grid-template-columns: minmax(0, 1fr) minmax(420px, 1.06fr);
@@ -310,8 +310,8 @@ a:focus-visible {
 }
 
 .content-view-placeholder {
-    min-height: 480px;
-    padding: 104px 0 120px;
+    min-height: 360px;
+    padding: 52px 0 60px;
 }
 
 .content-view-placeholder-inner {
@@ -347,7 +347,7 @@ a:focus-visible {
 .mods-overview {
     background: var(--soft-white);
     color: var(--black-button);
-    padding: 104px 0 120px;
+    padding: 52px 0 60px;
 }
 
 .mods-overview-inner {
@@ -539,7 +539,7 @@ a:focus-visible {
         min-height: auto;
         grid-template-columns: 1fr;
         gap: 48px;
-        padding-top: 64px;
+        padding-top: 44px;
     }
 
     .hero-copy {
@@ -587,8 +587,8 @@ a:focus-visible {
 
     .hero {
         gap: 36px;
-        padding-top: 44px;
-        padding-bottom: 56px;
+        padding-top: 32px;
+        padding-bottom: 40px;
     }
 
     .hero-title {
@@ -604,12 +604,12 @@ a:focus-visible {
     }
 
     .mods-overview {
-        padding: 72px 0 80px;
+        padding: 36px 0 40px;
     }
 
     .content-view-placeholder {
-        min-height: 360px;
-        padding: 72px 0 80px;
+        min-height: 280px;
+        padding: 36px 0 40px;
     }
 
     .mods-grid {
