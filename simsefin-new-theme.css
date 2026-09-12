@@ -453,6 +453,18 @@ a:focus-visible {
     gap: 26px;
 }
 
+.is-permalink-page .mods-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.is-permalink-page .tumblr-mod-card {
+    grid-column: 1 / -1;
+}
+
+.is-permalink-page .tumblr-mod-card-media {
+    display: none !important;
+}
+
 .latest-post-card {
     grid-column: 1 / -1;
     overflow: hidden;
