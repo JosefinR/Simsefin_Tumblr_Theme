@@ -452,7 +452,7 @@ a:focus-visible {
 }
 
 body:not(.is-permalink-page) .mods-grid {
-    max-width: 1160px;
+    max-width: 1040px;
     margin-right: auto;
     margin-left: 0;
 }
@@ -487,8 +487,9 @@ body:not(.is-permalink-page) .mods-grid {
 
 .mods-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 300px));
     gap: 26px;
+    justify-content: start;
 }
 
 .is-permalink-page .mods-grid {
