@@ -688,6 +688,12 @@ a:focus-visible {
     min-width: 0;
 }
 
+.is-permalink-page .tumblr-mod-card .mod-card-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 36px 24px 42px;
+}
+
 .tumblr-mod-card .mod-card-description img {
     display: block;
     max-width: 100%;
