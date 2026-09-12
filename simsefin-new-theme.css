@@ -487,9 +487,8 @@ body:not(.is-permalink-page) .mods-grid {
 
 .mods-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 300px));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 26px;
-    justify-content: start;
 }
 
 .is-permalink-page .mods-grid {
