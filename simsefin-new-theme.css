@@ -768,10 +768,10 @@ a:focus-visible {
     gap: 8px;
     margin-top: auto;
     padding: 12px 18px;
-    border: 1px solid var(--pink);
+    border: 1px solid var(--black-button);
     border-radius: 14px;
-    background: var(--pink);
-    color: var(--ink-text);
+    background: var(--black-button);
+    color: var(--soft-white);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 750;
@@ -781,9 +781,9 @@ a:focus-visible {
 
 .mod-card-cta:hover,
 .mod-card-cta:focus-visible {
-    border-color: var(--black-button);
-    background: var(--black-button);
-    color: var(--soft-white);
+    border-color: var(--pink);
+    background: var(--pink);
+    color: var(--ink-text);
 }
 
 .is-permalink-page .tumblr-mod-card .mod-card-cta {
