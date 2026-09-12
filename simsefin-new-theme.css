@@ -79,7 +79,7 @@ a:focus-visible {
 }
 
 .site-banner {
-    padding: 11px 20px;
+    padding: 8px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     background: var(--black-button);
     color: var(--soft-white);
@@ -93,7 +93,7 @@ a:focus-visible {
 .site-nav {
     display: flex;
     width: min(calc(100% - (var(--content-gutter) * 2)), var(--content-width));
-    min-height: 88px;
+    min-height: 76px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -173,9 +173,9 @@ a:focus-visible {
 .hero {
     display: grid;
     width: min(calc(100% - (var(--content-gutter) * 2)), var(--content-width));
-    min-height: calc(100vh - 88px);
+    min-height: calc(100vh - 116px);
     margin: 0 auto;
-    padding: 40px 0 80px;
+    padding: 28px 0 56px;
     grid-template-columns: minmax(0, 1fr) minmax(420px, 1.06fr);
     align-items: center;
     gap: 78px;
