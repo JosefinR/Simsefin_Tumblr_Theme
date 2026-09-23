@@ -184,9 +184,9 @@ input {
 
 .sidebar-page-icon {
     display: block;
-    width: 16px;
-    height: 16px;
-    flex: 0 0 16px;
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
     color: currentColor;
 }
 
@@ -361,8 +361,8 @@ body:not(.is-permalink-page) .post-card-content::after {
     height: 220px;
     background: linear-gradient(to bottom,
             transparent 0%,
-            color-mix(in srgb, var(--accent) 8%, #24201f) 82%,
-            color-mix(in srgb, var(--accent) 14%, #24201f) 100%);
+            color-mix(in srgb, #ffffff 72%, var(--feed-background)) 58%,
+            color-mix(in srgb, #ffffff 96%, var(--feed-background)) 100%);
     content: '';
     pointer-events: none;
 }
@@ -437,7 +437,7 @@ body:not(.is-permalink-page) .post-card-content::after {
 
 body:not(.is-permalink-page) .post-body {
     position: relative;
-    max-height: 360px;
+    max-height: 200px;
     overflow: hidden;
 }
 
