@@ -3,7 +3,7 @@
     --sidebar-background: #101010;
     --feed-background: #2a2a2a;
     --header-text: #fffdf9;
-    --ink-text: #fffdf9;
+    --post-text: #fffdf9;
     --muted-text: #d0cbc6;
     --accent: #fa8eaa;
     --accent-dark: #d97999;
@@ -30,7 +30,7 @@ body {
     margin: 0;
     background: #171717;
     background: var(--page-background);
-    color: var(--ink-text);
+    color: var(--header-text);
     font-family: 'DM Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -331,7 +331,7 @@ input {
 }
 
 .post-body {
-    color: var(--ink-text);
+    color: var(--post-text);
     overflow-wrap: anywhere;
 }
 
