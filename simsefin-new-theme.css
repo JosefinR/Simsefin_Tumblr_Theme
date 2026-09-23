@@ -507,7 +507,8 @@ body:not(.is-permalink-page) .post-body::after {
 }
 
 .post-body .post-download-link {
-    width: 100%;
+    width: fit-content;
+    max-width: 100%;
     min-height: 64px;
     padding: 18px 30px;
     font-size: 16px;
