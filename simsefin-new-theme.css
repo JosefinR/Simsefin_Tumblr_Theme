@@ -9,7 +9,7 @@
     --post-text: #171717;
     --ink-text: #171717;
     --muted-text: #d0cbc6;
-    --description-text: #d0cbc6;
+    --description-text: #fffdf9;
     --accent: #fa8eaa;
     --accent-dark: #d97999;
     --content-width: 1180px;
@@ -77,7 +77,7 @@ input {
     grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
     align-items: start;
     gap: clamp(28px, 5vw, 72px);
-    padding: 40px 0 64px;
+    padding: 24px 0 64px;
 }
 
 .site-sidebar {
@@ -135,24 +135,41 @@ input {
 
 .sidebar-pages {
     display: grid;
-    gap: 6px;
+    gap: 8px;
     padding-top: 20px;
     border-top: 0;
 }
 
 .sidebar-page-link {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    min-height: 48px;
+    min-height: 52px;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 10px 12px;
+    padding: 11px 14px 11px 18px;
     border-radius: 12px;
     color: var(--navigation-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    transition: background 160ms ease, color 160ms ease;
+    transition: background 180ms ease, color 180ms ease, transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.sidebar-page-link::before {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 3px;
+    border-radius: 999px;
+    background: var(--accent);
+    content: '';
+    opacity: 0;
+    transform: scaleY(0.5);
+    transition: opacity 180ms ease, transform 180ms ease;
 }
 
 .sidebar-page-link small {
@@ -167,6 +184,16 @@ input {
 .sidebar-page-link.is-active {
     background: var(--accent);
     color: #171717;
+    box-shadow: 0 8px 18px rgba(250, 142, 170, 0.18);
+    transform: translateX(4px);
+}
+
+.sidebar-page-link:hover::before,
+.sidebar-page-link:focus-visible::before,
+.sidebar-page-link.is-active::before {
+    background: #171717;
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 .sidebar-page-link:hover small,
@@ -303,7 +330,7 @@ input {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     color: var(--muted-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 11px;
@@ -511,7 +538,7 @@ input {
     .site-shell {
         grid-template-columns: 1fr;
         gap: 28px;
-        padding-top: 32px;
+        padding-top: 24px;
     }
 
     .site-sidebar {
@@ -553,7 +580,7 @@ input {
 @media (max-width: 620px) {
     .site-shell {
         width: min(calc(100% - 40px), var(--content-width));
-        padding-top: 24px;
+        padding-top: 20px;
         padding-bottom: 40px;
     }
 
