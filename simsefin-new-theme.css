@@ -176,6 +176,20 @@ input {
     font-weight: 500;
 }
 
+.sidebar-page-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-page-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    color: currentColor;
+}
+
 .sidebar-page-link:hover,
 .sidebar-page-link:focus-visible,
 .sidebar-page-link.is-active {
