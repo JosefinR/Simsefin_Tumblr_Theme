@@ -374,7 +374,7 @@ body:not(.is-permalink-page) .post-card-content::after {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     color: var(--meta-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 11px;
@@ -482,6 +482,7 @@ body:not(.is-permalink-page) .post-card-content::after {
 }
 
 .post-body h1 {
+    margin-top: 0;
     font-weight: 900;
 }
 
