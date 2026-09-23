@@ -3,7 +3,8 @@
     --sidebar-background: #101010;
     --feed-background: #2a2a2a;
     --header-text: #fffdf9;
-    --post-text: #fffdf9;
+    --post-text: #171717;
+    --ink-text: #171717;
     --muted-text: #d0cbc6;
     --accent: #fa8eaa;
     --accent-dark: #d97999;
@@ -31,6 +32,7 @@ body {
     background: #171717;
     background: var(--page-background);
     color: var(--header-text);
+    --ink-text: var(--post-text);
     font-family: 'DM Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -97,9 +99,9 @@ input {
     display: block;
     width: 100%;
     margin: 0 0 24px;
-    padding: 8px;
+    padding: 0;
     border-radius: 22px;
-    background: #000000;
+    background: transparent;
 }
 
 .sidebar-avatar img {
@@ -331,8 +333,16 @@ input {
 }
 
 .post-body {
-    color: var(--post-text);
+    color: var(--post-text) !important;
     overflow-wrap: anywhere;
+}
+
+.post-body p,
+.post-body li,
+.post-body dd,
+.post-body dt,
+.post-body figcaption {
+    color: var(--post-text) !important;
 }
 
 .post-body> :first-child {
@@ -374,7 +384,11 @@ input {
     margin: 20px 0;
     padding-left: 18px;
     border-left: 3px solid var(--accent);
-    color: var(--muted-text);
+    color: var(--muted-text) !important;
+}
+
+.post-body blockquote p {
+    color: var(--muted-text) !important;
 }
 
 .post-body ul,
@@ -521,7 +535,7 @@ input {
     }
 
     .sidebar-avatar {
-        padding: 6px;
+        padding: 0;
         border-radius: 16px;
     }
 
