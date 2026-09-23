@@ -1,6 +1,5 @@
 :root {
     --page-background: #171717;
-    --sidebar-background: #101010;
     --feed-background: #2a2a2a;
     --header-text: #fffdf9;
     --logo-text: #fffdf9;
@@ -87,11 +86,10 @@ input {
 }
 
 .sidebar-card {
-    padding: 28px;
+    padding: 0 28px 28px;
     border: 0;
     border-radius: var(--corner-radius);
-    background: #101010;
-    background: var(--sidebar-background);
+    background: transparent;
 }
 
 .sidebar-intro {
