@@ -366,6 +366,19 @@ input {
     overflow-wrap: anywhere;
 }
 
+.post-body p,
+.post-body li,
+.post-body dd,
+.post-body dt,
+.post-body figcaption,
+.post-body h2 {
+    color: var(--post-text) !important;
+}
+
+.post-body h2 {
+    margin: 14px 0 6px;
+}
+
 body:not(.is-permalink-page) .post-body {
     position: relative;
     max-height: 360px;
@@ -386,14 +399,6 @@ body:not(.is-permalink-page) .post-body::after {
     pointer-events: none;
 }
 
-.post-body p,
-.post-body li,
-.post-body dd,
-.post-body dt,
-.post-body figcaption {
-    color: var(--post-text) !important;
-}
-
 .post-body> :first-child {
     margin-top: 0;
 }
@@ -404,7 +409,7 @@ body:not(.is-permalink-page) .post-body::after {
 
 .post-body a,
 .post-tags a {
-    color: var(--accent);
+    color: var(--accent) !important;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -480,10 +485,16 @@ body:not(.is-permalink-page) .post-body::after {
 }
 
 .post-read-more {
-    width: 100%;
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 44px;
+    margin: 18px auto 0;
+    padding: 10px 24px;
     border-color: #171717;
     background: transparent;
     color: #171717;
+    font-size: 14px;
 }
 
 .post-read-more:hover,
