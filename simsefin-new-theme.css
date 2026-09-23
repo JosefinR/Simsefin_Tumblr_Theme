@@ -101,7 +101,7 @@ input {
 .sidebar-avatar {
     display: block;
     width: 100%;
-    margin: 0 0 24px;
+    margin: 16px 0 0;
     padding: 0;
     border-radius: 22px;
     background: transparent;
@@ -561,14 +561,12 @@ body:not(.is-permalink-page) .post-body::after {
     }
 
     .sidebar-intro {
-        display: grid;
-        grid-template-columns: 108px minmax(0, 1fr);
-        align-items: center;
-        gap: 20px;
+        display: block;
     }
 
     .sidebar-avatar {
-        margin: 0;
+        width: 108px;
+        margin: 16px 0 0;
     }
 
     .sidebar-bio {
@@ -599,11 +597,11 @@ body:not(.is-permalink-page) .post-body::after {
     }
 
     .sidebar-intro {
-        grid-template-columns: 84px minmax(0, 1fr);
-        gap: 16px;
+        display: block;
     }
 
     .sidebar-avatar {
+        width: 84px;
         padding: 0;
         border-radius: 16px;
     }
