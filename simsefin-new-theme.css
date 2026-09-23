@@ -7,6 +7,7 @@
     --navigation-divider: #3a3a3a;
     --post-title: #fffdf9;
     --post-text: #171717;
+    --meta-text: #fa8eaa;
     --ink-text: #171717;
     --muted-text: #d0cbc6;
     --description-text: #fffdf9;
@@ -373,8 +374,8 @@ body:not(.is-permalink-page) .post-card-content::after {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 8px;
-    color: var(--muted-text);
+    margin-bottom: 2px;
+    color: var(--meta-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 11px;
     font-weight: 750;
@@ -383,20 +384,30 @@ body:not(.is-permalink-page) .post-card-content::after {
 }
 
 .post-meta a {
-    color: var(--accent);
+    color: var(--meta-text);
 }
 
 .post-meta a:hover,
 .post-meta a:focus-visible {
-    color: var(--accent);
+    color: var(--meta-text);
 }
 
 .post-status {
-    color: var(--accent);
+    color: var(--meta-text);
+}
+
+.post-meta .like_button {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: var(--meta-text) !important;
 }
 
 .post-title {
-    margin: 0 0 16px;
+    margin: -2px 0 8px;
     color: var(--post-title);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 30px;
@@ -518,7 +529,7 @@ body:not(.is-permalink-page) .post-body {
     max-width: 100%;
     min-height: 44px;
     margin: 18px auto 0;
-    padding: 10px 24px;
+    padding: 10px 36px;
     border: 2px solid #171717;
     background: transparent;
     color: #171717;
@@ -531,6 +542,10 @@ body:not(.is-permalink-page) .post-body {
 .post-read-more:focus-visible {
     background: #171717;
     color: #fffdf9;
+}
+
+body:not(.is-permalink-page) .post-read-more {
+    margin-top: -28px;
 }
 
 .post-body .post-read-more,
