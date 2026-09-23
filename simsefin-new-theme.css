@@ -253,14 +253,14 @@ input {
 
 .feed-description {
     max-width: 620px;
-    margin: 24px 4px 0;
+    margin: 8px 0 0;
     color: var(--muted-text);
 }
 
 .post-list {
     display: grid;
     gap: 28px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 
 .post-card {
