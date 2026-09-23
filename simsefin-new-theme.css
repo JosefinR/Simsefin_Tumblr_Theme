@@ -261,6 +261,8 @@ input {
 }
 
 .post-card {
+    width: min(100%, 900px);
+    margin-inline: auto;
     overflow: hidden;
     border: 0;
     border-radius: 20px;
@@ -271,7 +273,7 @@ input {
 
 .post-card-media {
     width: 100%;
-    max-height: 560px;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #111111;
 }
@@ -283,17 +285,27 @@ input {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 .post-card-media img {
-    max-height: 560px;
     object-fit: cover;
 }
 
 .post-card-media figure {
     margin: 0;
+}
+
+.post-card-media .latest-post-photoset {
+    overflow: hidden;
+}
+
+.post-card-media .latest-post-photoset img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .post-card-media:empty {
@@ -609,6 +621,7 @@ body:not(.is-permalink-page) .post-body::after {
     }
 
     .sidebar-name {
+        margin-top: 10px;
         font-size: 26px;
     }
 
