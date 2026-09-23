@@ -9,6 +9,7 @@
     --post-text: #171717;
     --ink-text: #171717;
     --muted-text: #d0cbc6;
+    --description-text: #d0cbc6;
     --accent: #fa8eaa;
     --accent-dark: #d97999;
     --content-width: 1180px;
@@ -127,7 +128,7 @@ input {
 
 .sidebar-bio {
     margin: 14px 0 26px;
-    color: var(--muted-text);
+    color: var(--description-text);
     font-size: 14px;
     line-height: 1.55;
 }
