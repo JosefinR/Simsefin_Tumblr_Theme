@@ -371,6 +371,8 @@ input {
 .post-body dd,
 .post-body dt,
 .post-body figcaption,
+.post-body h1,
+.post-body h3,
 .post-body h2 {
     color: var(--post-text) !important;
 }
@@ -383,6 +385,11 @@ input {
 .post-body h2,
 .post-body h3 {
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
+    margin-bottom: 6px;
+}
+
+.post-body h1 {
+    font-weight: 900;
 }
 
 body:not(.is-permalink-page) .post-body {
