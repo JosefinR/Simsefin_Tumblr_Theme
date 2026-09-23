@@ -393,7 +393,15 @@ body:not(.is-permalink-page) .post-card-content::after {
 }
 
 .post-status {
-    color: var(--meta-text);
+    color: var(--like-heart-color);
+}
+
+.post-engagement {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    color: var(--like-heart-color);
 }
 
 .like-control {
@@ -404,7 +412,6 @@ body:not(.is-permalink-page) .post-card-content::after {
     flex: 0 0 24px;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     color: var(--like-heart-color);
 }
 
@@ -608,9 +615,11 @@ body.is-permalink-page .post-read-more {
 
 .permalink-back-link {
     display: inline-flex;
+    width: min(100%, 680px);
     align-items: center;
     gap: 8px;
-    margin-bottom: 12px;
+    margin: 0 auto 12px;
+    padding-left: 30px;
     color: var(--accent);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -764,6 +773,10 @@ body.is-permalink-page .post-read-more {
 
     .post-card-content {
         padding: 18px 20px 24px;
+    }
+
+    .permalink-back-link {
+        padding-left: 20px;
     }
 
     .post-title {
