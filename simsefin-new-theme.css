@@ -146,7 +146,7 @@ input {
 .sidebar-pages {
     display: grid;
     gap: 0;
-    padding-top: 12px;
+    padding-top: 0;
     border-top: 1px solid var(--navigation-divider);
 }
 
@@ -256,6 +256,8 @@ input {
 }
 
 .post-list {
+    width: min(100%, 760px);
+    margin-inline: auto;
     display: grid;
     gap: 28px;
     padding-top: 8px;
