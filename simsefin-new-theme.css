@@ -92,7 +92,6 @@ input {
     border-radius: var(--corner-radius);
     background: #101010;
     background: var(--sidebar-background);
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
 }
 
 .sidebar-intro {
@@ -403,17 +402,14 @@ body:not(.is-permalink-page) .post-body::after {
     margin-bottom: 0;
 }
 
-.post-body a,
-.post-tags a {
+.post-body a {
     color: var(--accent) !important;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 .post-body a:hover,
-.post-body a:focus-visible,
-.post-tags a:hover,
-.post-tags a:focus-visible {
+.post-body a:focus-visible {
     color: var(--header-text);
 }
 
@@ -446,16 +442,7 @@ body:not(.is-permalink-page) .post-body::after {
     padding-left: 24px;
 }
 
-.post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 14px;
-    margin-top: 16px;
-    font-size: 13px;
-}
-
-.post-read-more,
-.post-download-link {
+.post-read-more {
     display: inline-flex;
     min-height: 64px;
     align-items: center;
@@ -473,9 +460,7 @@ body:not(.is-permalink-page) .post-body::after {
 }
 
 .post-read-more:hover,
-.post-read-more:focus-visible,
-.post-download-link:hover,
-.post-download-link:focus-visible {
+.post-read-more:focus-visible {
     background: var(--accent-dark);
     color: #171717;
 }
@@ -501,24 +486,13 @@ body:not(.is-permalink-page) .post-body::after {
 
 .post-body .post-read-more,
 .post-body .post-read-more:hover,
-.post-body .post-read-more:focus-visible,
-.post-body .post-download-link,
-.post-body .post-download-link:hover,
-.post-body .post-download-link:focus-visible {
+.post-body .post-read-more:focus-visible {
     display: flex;
     width: fit-content;
     margin-top: 0;
     margin-bottom: 10px;
     color: #171717 !important;
     text-decoration: none !important;
-}
-
-.post-body .post-download-link {
-    width: fit-content;
-    max-width: 100%;
-    min-height: 64px;
-    padding: 18px 30px;
-    font-size: 16px;
 }
 
 .posts-empty {
