@@ -350,22 +350,7 @@ input {
 }
 
 .post-card-content {
-    position: relative;
     padding: 20px 30px 28px;
-}
-
-body:not(.is-permalink-page) .post-card-content::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 220px;
-    background: linear-gradient(to bottom,
-            transparent 0%,
-            color-mix(in srgb, #ffffff 72%, var(--feed-background)) 58%,
-            color-mix(in srgb, #ffffff 96%, var(--feed-background)) 100%);
-    content: '';
-    pointer-events: none;
 }
 
 .post-meta {
@@ -385,6 +370,10 @@ body:not(.is-permalink-page) .post-card-content::after {
 
 .post-meta a {
     color: var(--meta-text);
+}
+
+body.is-permalink-page .post-meta {
+    margin-bottom: 5px;
 }
 
 .post-meta a:hover,
@@ -495,12 +484,6 @@ body:not(.is-permalink-page) .post-card-content::after {
     font-weight: 900;
 }
 
-body:not(.is-permalink-page) .post-body {
-    position: relative;
-    max-height: 200px;
-    overflow: hidden;
-}
-
 .post-body> :first-child:not(h1) {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -550,67 +533,13 @@ body:not(.is-permalink-page) .post-body {
     padding-left: 24px;
 }
 
-.post-read-more {
-    display: inline-flex;
-    min-height: 64px;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 22px;
-    padding: 18px 30px;
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    background: var(--accent);
-    color: #171717;
-    font-family: 'Outfit', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 750;
+.tumblr-mod-card[role="link"] {
+    cursor: pointer;
 }
 
-.post-read-more:hover,
-.post-read-more:focus-visible {
-    background: var(--accent-dark);
-    color: #171717;
-}
-
-.post-read-more {
-    display: flex;
-    width: fit-content;
-    max-width: 100%;
-    min-height: 44px;
-    margin: 18px auto 0;
-    padding: 10px 36px;
-    border: 2px solid #171717;
-    background: transparent;
-    color: #171717;
-    font-size: 14px;
-    position: relative;
-    z-index: 2;
-}
-
-.post-read-more:hover,
-.post-read-more:focus-visible {
-    background: #171717;
-    color: #fffdf9;
-}
-
-body:not(.is-permalink-page) .post-read-more {
-    margin-top: -28px;
-}
-
-.post-body .post-read-more,
-.post-body .post-read-more:hover,
-.post-body .post-read-more:focus-visible {
-    display: flex;
-    width: fit-content;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #171717 !important;
-    text-decoration: none !important;
-}
-
-body.is-permalink-page .post-read-more {
-    display: none;
+.tumblr-mod-card[role="link"]:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
 }
 
 .permalink-back-link {
