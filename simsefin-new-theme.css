@@ -2,7 +2,6 @@
     --page-background: #171717;
     --sidebar-background: #101010;
     --feed-background: #2a2a2a;
-    --content-border: #3a3a3a;
     --header-text: #fffdf9;
     --logo-text: #fffdf9;
     --navigation-text: #fffdf9;
@@ -12,7 +11,6 @@
     --muted-text: #d0cbc6;
     --accent: #fa8eaa;
     --accent-dark: #d97999;
-    --line: var(--content-border);
     --content-width: 1180px;
     --content-gutter: clamp(20px, 5vw, 72px);
     --sidebar-width: 290px;
@@ -88,7 +86,7 @@ input {
 
 .sidebar-card {
     padding: 28px;
-    border: 1px solid var(--content-border);
+    border: 0;
     border-radius: var(--corner-radius);
     background: #101010;
     background: var(--sidebar-background);
@@ -138,7 +136,7 @@ input {
     display: grid;
     gap: 6px;
     padding-top: 20px;
-    border-top: 1px solid var(--line);
+    border-top: 0;
 }
 
 .sidebar-page-link {
@@ -182,7 +180,7 @@ input {
     gap: 16px;
     margin-top: 24px;
     padding-top: 20px;
-    border-top: 1px solid var(--line);
+    border-top: 0;
     color: var(--muted-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -206,7 +204,7 @@ input {
     justify-content: space-between;
     gap: 24px;
     padding: 0 4px 30px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 0;
 }
 
 .feed-kicker {
@@ -256,16 +254,11 @@ input {
 
 .post-card {
     overflow: hidden;
-    border: 1px solid var(--line);
+    border: 0;
     border-radius: 20px;
     background: #2a2a2a;
     background: var(--feed-background);
     box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
-}
-
-.post-card:hover,
-.post-card:focus-within {
-    border-color: rgba(250, 142, 170, 0.42);
 }
 
 .post-card-media {
@@ -316,6 +309,10 @@ input {
     font-weight: 750;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.post-meta a {
+    color: var(--accent);
 }
 
 .post-meta a:hover,
@@ -454,7 +451,7 @@ input {
 
 .site-footer {
     padding: 56px 4px 0;
-    border-top: 1px solid var(--line);
+    border-top: 0;
     background: #171717;
     background: var(--page-background);
     color: rgba(208, 203, 198, 0.68);
