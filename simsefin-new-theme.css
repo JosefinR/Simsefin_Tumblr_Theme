@@ -379,6 +379,12 @@ input {
     margin: 14px 0 6px;
 }
 
+.post-body h1,
+.post-body h2,
+.post-body h3 {
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
+}
+
 body:not(.is-permalink-page) .post-body {
     position: relative;
     max-height: 360px;
