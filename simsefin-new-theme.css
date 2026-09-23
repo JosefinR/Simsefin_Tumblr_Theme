@@ -226,6 +226,22 @@ input {
     color: var(--accent);
 }
 
+.sidebar-patreon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-patreon-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    background: currentColor;
+    -webkit-mask: url('https://static.tumblr.com/op8h2yn/8qytl82i3/patreon_symbol_1_white_rgb.png') center / contain no-repeat;
+    mask: url('https://static.tumblr.com/op8h2yn/8qytl82i3/patreon_symbol_1_white_rgb.png') center / contain no-repeat;
+}
+
 .site-main {
     width: min(100%, 760px);
     margin-left: 0;
@@ -418,8 +434,8 @@ body:not(.is-permalink-page) .post-body::after {
     height: 128px;
     background: linear-gradient(to bottom,
             transparent 0%,
-            var(--feed-background) 88%,
-            var(--feed-background) 100%);
+            color-mix(in srgb, var(--accent) 8%, var(--feed-background)) 88%,
+            color-mix(in srgb, var(--accent) 14%, var(--feed-background)) 100%);
     content: '';
     pointer-events: none;
 }
@@ -502,7 +518,7 @@ body:not(.is-permalink-page) .post-body::after {
     min-height: 44px;
     margin: 18px auto 0;
     padding: 10px 24px;
-    border-color: #171717;
+    border: 2px solid #171717;
     background: transparent;
     color: #171717;
     font-size: 14px;
@@ -523,6 +539,26 @@ body:not(.is-permalink-page) .post-body::after {
     margin-bottom: 10px;
     color: #171717 !important;
     text-decoration: none !important;
+}
+
+body.is-permalink-page .post-read-more {
+    display: none;
+}
+
+.permalink-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: var(--accent);
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.permalink-back-link:hover,
+.permalink-back-link:focus-visible {
+    color: var(--header-text);
 }
 
 .posts-empty {
