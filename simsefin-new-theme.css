@@ -428,6 +428,17 @@ input {
     color: #171717;
 }
 
+.post-body .post-read-more,
+.post-body .post-read-more:hover,
+.post-body .post-read-more:focus-visible {
+    display: flex;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #171717 !important;
+    text-decoration: none !important;
+}
+
 .posts-empty {
     padding: 32px 4px;
     color: var(--muted-text);
