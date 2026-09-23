@@ -385,7 +385,7 @@ input {
 .post-body h2,
 .post-body h3 {
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 .post-body h1 {
