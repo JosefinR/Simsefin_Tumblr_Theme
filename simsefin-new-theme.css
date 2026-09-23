@@ -407,7 +407,7 @@ body:not(.is-permalink-page) .post-card-content::after {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    color: var(--accent);
+    color: var(--like-heart-color);
 }
 
 .like-control .like_button {
@@ -432,18 +432,18 @@ body:not(.is-permalink-page) .post-card-content::after {
     width: 20px;
     height: 20px;
     fill: transparent;
-    color: var(--accent);
+    color: var(--like-heart-color);
     pointer-events: none;
     transition: fill 160ms ease;
 }
 
 .like-control:has(.like_button.liked) .like-heart-icon {
-    fill: var(--accent);
+    fill: var(--like-heart-color);
 }
 
 .like-control:focus-within {
     border-radius: 50%;
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--like-heart-color);
     outline-offset: 3px;
 }
 
