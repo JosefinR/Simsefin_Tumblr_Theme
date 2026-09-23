@@ -128,7 +128,7 @@ input {
 }
 
 .sidebar-bio {
-    margin: 14px 0 26px;
+    margin: 14px 0 10px;
     color: var(--description-text);
     font-size: 14px;
     line-height: 1.55;
@@ -137,7 +137,7 @@ input {
 .sidebar-pages {
     display: grid;
     gap: 0;
-    padding-top: 20px;
+    padding-top: 8px;
     border-top: 0;
 }
 
