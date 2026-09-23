@@ -214,7 +214,8 @@ input {
 
 .site-main {
     width: min(100%, 760px);
-    margin-inline: auto;
+    margin-left: 0;
+    margin-right: auto;
     min-width: 0;
     padding-top: 0;
 }
@@ -586,7 +587,7 @@ body:not(.is-permalink-page) .post-body::after {
     }
 
     .sidebar-bio {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .sidebar-pages,
