@@ -331,7 +331,7 @@ input {
 }
 
 .post-body {
-    color: var(--muted-text);
+    color: var(--ink-text);
     overflow-wrap: anywhere;
 }
 
