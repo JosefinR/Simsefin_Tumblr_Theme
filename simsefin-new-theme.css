@@ -349,7 +349,22 @@ input {
 }
 
 .post-card-content {
+    position: relative;
     padding: 20px 30px 28px;
+}
+
+body:not(.is-permalink-page) .post-card-content::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 220px;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            color-mix(in srgb, var(--accent) 8%, #24201f) 82%,
+            color-mix(in srgb, var(--accent) 14%, #24201f) 100%);
+    content: '';
+    pointer-events: none;
 }
 
 .post-meta {
@@ -424,20 +439,6 @@ body:not(.is-permalink-page) .post-body {
     position: relative;
     max-height: 360px;
     overflow: hidden;
-}
-
-body:not(.is-permalink-page) .post-body::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 128px;
-    background: linear-gradient(to bottom,
-            transparent 0%,
-            color-mix(in srgb, var(--accent) 8%, var(--feed-background)) 88%,
-            color-mix(in srgb, var(--accent) 14%, var(--feed-background)) 100%);
-    content: '';
-    pointer-events: none;
 }
 
 .post-body> :first-child {
@@ -522,6 +523,8 @@ body:not(.is-permalink-page) .post-body::after {
     background: transparent;
     color: #171717;
     font-size: 14px;
+    position: relative;
+    z-index: 2;
 }
 
 .post-read-more:hover,
