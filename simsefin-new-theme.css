@@ -116,12 +116,23 @@ input {
 
 .sidebar-name {
     margin: 0;
-    color: var(--accent);
+    color: var(--logo-text);
     font-family: 'Outfit', Helvetica, Arial, sans-serif;
     font-size: 32px;
     font-weight: 800;
     letter-spacing: 0;
     line-height: 1;
+}
+
+.sidebar-kicker {
+    margin: 0 0 4px;
+    color: var(--accent);
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 1.8px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .sidebar-bio {
@@ -213,17 +224,6 @@ input {
     gap: 24px;
     padding: 0 0 12px;
     border-bottom: 0;
-}
-
-.feed-kicker {
-    margin: 0 0 10px;
-    color: var(--accent);
-    font-family: 'Outfit', Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 750;
-    letter-spacing: 1.8px;
-    line-height: 1.2;
-    text-transform: uppercase;
 }
 
 .feed-title {
