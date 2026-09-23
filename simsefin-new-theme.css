@@ -396,14 +396,53 @@ body:not(.is-permalink-page) .post-card-content::after {
     color: var(--meta-text);
 }
 
-.post-meta .like_button {
+.like-control {
+    position: relative;
     display: inline-flex;
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    color: var(--meta-text) !important;
+    color: var(--accent);
+}
+
+.like-control .like_button {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    opacity: 0;
+}
+
+.like-control .like_button iframe {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.like-heart-icon {
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+    color: var(--accent);
+    pointer-events: none;
+    transition: fill 160ms ease;
+}
+
+.like-control:has(.like_button.liked) .like-heart-icon {
+    fill: var(--accent);
+}
+
+.like-control:focus-within {
+    border-radius: 50%;
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
 .post-title {
